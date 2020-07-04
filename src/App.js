@@ -19,7 +19,6 @@ function App() {
           <Navigation className="headerNav">
             <Link to="/resume">Resume</Link>
             <Link to="/projects">Projects</Link>
-            <Link to="/aboutMe">About me</Link>
             <Link to="/contact">contact</Link>
           </Navigation>
         </Header>
