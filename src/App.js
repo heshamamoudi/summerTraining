@@ -11,7 +11,7 @@ function App() {
           className="headerColor"
           title={
             <Link style={{ color: "white" }} to="/">
-              Hesham amoudi
+              Hesham Amoudi
             </Link>
           }
           scroll

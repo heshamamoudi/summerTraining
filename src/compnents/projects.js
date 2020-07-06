@@ -35,9 +35,7 @@ class Projects extends Component {
         "https://lh3.googleusercontent.com/proxy/Zn9NLiHKjckq-wsmx6fpMc6fcHZtVuGp2xhpmsVVuTcypFSSV5UJeZ1IikRVqb4hwWb2w-j3-_PzGQCSz_S3oAqdkEJ_IcRS1M7nJs3RPKleDWWW3m4UKFiE",
     },
   ];
-  btnClick() {
-    window.open("https://www.google.com");
-  }
+  
   render() {
     return (
       <div className="cardDiv">

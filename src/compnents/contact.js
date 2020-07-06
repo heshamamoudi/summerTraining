@@ -36,7 +36,7 @@ class Contact extends Component {
                     icon="person"
                     style={{ fontSize: "22px", margin: "auto" }}
                   >
-                    Hesham amoudi
+                    Hesham Amoudi
                   </ListItemContent>
                 </ListItem>
                 <ListItem>

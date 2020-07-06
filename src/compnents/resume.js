@@ -27,7 +27,7 @@ class Resume extends Component {
             </div>
             {/* text adjustment */}
             <h2 style={{ textAlign: "left", marginLeft: "0.5rem" }}>
-              Hesham amoudi
+              Hesham Amoudi
             </h2>
             <h4 style={{ color: "grey", opacity: "0.8", marginLeft: "1rem" }}>
               Information Technology
