@@ -7,6 +7,7 @@ class Resume extends Component {
     return (
       <div className="background">
         <Grid>
+          {/* this cell has the content of the left side part in resume */}
           <Cell
             col={4}
             style={{
@@ -14,7 +15,8 @@ class Resume extends Component {
               border: "2px solid black",
               margin: "auto",
             }}
-          >
+          > 
+          
             <div style={{ textAlign: "center" }}>
               <img
                 src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male2-512.png"
@@ -23,14 +25,17 @@ class Resume extends Component {
                 style={{ marginTop: "-2rem", marginLeft: "-20rem" }}
               />
             </div>
+            {/* text adjustment */}
             <h2 style={{ textAlign: "left", marginLeft: "0.5rem" }}>
               Hesham amoudi
             </h2>
             <h4 style={{ color: "grey", opacity: "0.8", marginLeft: "1rem" }}>
-              information tech
+              Information Technology
             </h4>
+            {/* -------------------------------------- */}
+            {/* the purple line beneath the text */}
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
-
+              {/* ------------ */}
             <p style={{ fontSize: "15px", marginLeft: "0.5rem" }}>
               To pursue a career in the information tech. field where
               team-work and patients service excellence is number one 
@@ -46,6 +51,7 @@ class Resume extends Component {
               <br />
               E-mail: Hamoudi@stu.kau.edu.sa
             </p>
+            {/* the purple line beneath the text */}
             <hr
               style={{
                 borderTop: "3px solid #833fb2",
@@ -54,7 +60,9 @@ class Resume extends Component {
                 marginBottom: "0",
               }}
             />
+            {/* ------------ */}
           </Cell>
+          {/* ------------------------------------------------------------ */}
           <Cell
             className="RsRight"
             col={8}

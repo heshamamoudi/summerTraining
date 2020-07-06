@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 
 class Contact extends Component {
   render() {
     return (
       <div className="contactb">
         <Grid className="contactG">
+          {/* content of the first half of the contact page  */}
           <Cell className="firstHalf" col={6}>
             <h2>Hesham Amoudi</h2>
             <img
@@ -22,10 +24,12 @@ class Contact extends Component {
                and optimization.
             </p>
           </Cell>
+          {/* --------------------------------------------------- */}
           <Cell className="2ndHalf" style={{ paddingRight: "10rem" }} col={6}>
             <h2>Contact me</h2>
             <hr />
             <div className="list" style={{ color: "black" }}>
+              {/*------------ contact info ---------------- */}
               <List style={{ paddingLeft: "10rem" }}>
                 <ListItem c>
                   <ListItemContent
@@ -51,6 +55,32 @@ class Contact extends Component {
                     Hamoudi@stu.kau.edu.sa
                   </ListItemContent>
                 </ListItem>
+                {/* -------------------------------------------- */}
+                {/* google maps starts from here */}
+                <ListItem>
+                  <ListItemContent>
+                    <h1 className="location" style={{ fontSize: "15px" }}>
+                      Location:
+                    </h1>
+                    <div className="map">
+                      <Map
+                        google={this.props.google}
+                        zoom={14}
+                        initialCenter={{ lat: "21.578712", lng: "39.201868" }}
+                      >
+                        <Marker
+                          onClick={this.onMarkerClick}
+                          name={"Current location"}
+                        />
+
+                        <InfoWindow onClose={this.onInfoWindowClose}>
+                          <div></div>
+                        </InfoWindow>
+                      </Map>
+                    </div>
+                  </ListItemContent>
+                </ListItem>
+                {/* ends here  */}
               </List>
             </div>
           </Cell>
@@ -60,4 +90,6 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyAHn2GQqp9-YChnDrIVf6v7-McoZqZPaAo",
+})(Contact);

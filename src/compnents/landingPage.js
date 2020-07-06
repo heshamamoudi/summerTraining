@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
-
+//components of landing page 
 class Landing extends Component {
   render() {
     return (

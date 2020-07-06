@@ -156,3 +156,13 @@
   left: 0;
   right: 0;
 }
+
+.map {
+  width: 300px !important;
+  height: 200px !important;
+  position: relative;
+}
+.location {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
