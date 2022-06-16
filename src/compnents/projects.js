@@ -50,6 +50,7 @@ function ProjectList(props) {
   const projects = props.projects;
 
   const projectItems = projects.map((project, i) => (
+    
     <Cell col={2} key={i}>
       <Card shadow={0} style={{ marginLeft: "10px", width: "auto" }}>
         <CardTitle

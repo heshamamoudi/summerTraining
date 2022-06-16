@@ -73,9 +73,7 @@ class Contact extends Component {
                           name={"Current location"}
                         />
 
-                        <InfoWindow onClose={this.onInfoWindowClose}>
-                          <div></div>
-                        </InfoWindow>
+
                       </Map>
                     </div>
                   </ListItemContent>
